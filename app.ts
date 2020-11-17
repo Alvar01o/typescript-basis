@@ -1,3 +1,7 @@
+import Students from './Student'
+/// <reference path="./StudentCalc.ts" />
+
+
 console.log("Hello!")
 
 let a:number = 10
@@ -18,20 +22,20 @@ let student:StudentInfo = {
     Language:LanguagesKnown[LanguagesKnown.Hindi]
 }
 
-let StudentsList:StudentInfo[] = [
+let StudentsList:Array<StudentInfo> = [
     {Name:"Sara", Age:26, Phone:5465487987, Language: LanguagesKnown[LanguagesKnown.English]},
     {Name:"Samantha", Age:22, Phone:5465487987, Language: LanguagesKnown[LanguagesKnown.Spanish]}    
 ]
 
 StudentsList.push(student);
 
-function ShowPersons(persons: any[]) {
+function ShowPersons(persons: Array<any>) {
     for (let index = 0; index < persons.length; index++) {
         console.log(persons[index])
     }
 }
 
-function getNumbers (...nums:number[]) {
+function getNumbers (...nums:Array<number>) {
     nums.forEach(element => {
         console.log("Number:" + element)
     });
@@ -65,3 +69,13 @@ let StudentName2 =(fName:string, lName:string)=>{
 
 console.log(StudentName2("El" , "Pepe"));
 
+
+console.log("---------------------------")
+/**********************CLASSES */
+
+let s = new Students("Someone" , "fname");
+console.log(s.GetFullname());
+
+console.log("---------------------------")
+let calc = StudentCalc.AnnualFeeCalc(100, 200);
+console.log(calc);
