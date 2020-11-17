@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var Student_1 = require("./Student");
-/// <reference path="./StudentCalc.ts" />
+//// <reference path="./StudentCalc.ts" />
 console.log("Hello!");
 var a = 10;
 var b = "adsad";
@@ -59,7 +59,6 @@ console.log("---------------------------");
 /**********************CLASSES */
 var s = new Student_1["default"]("Someone", "fname");
 console.log(s.GetFullname());
-console.log("---------------------------");
-var calc = StudentCalc.AnnualFeeCalc(100, 200);
-console.log(calc);
-//# sourceMappingURL=app.js.map
+//console.log("---------------------------")
+//let calc = StudentCalc.AnnualFeeCalc(100, 200);
+//console.log(calc);

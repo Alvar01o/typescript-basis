@@ -1,5 +1,5 @@
 import Students from './Student'
-/// <reference path="./StudentCalc.ts" />
+//// <reference path="./StudentCalc.ts" />
 
 
 console.log("Hello!")
@@ -76,6 +76,6 @@ console.log("---------------------------")
 let s = new Students("Someone" , "fname");
 console.log(s.GetFullname());
 
-console.log("---------------------------")
-let calc = StudentCalc.AnnualFeeCalc(100, 200);
-console.log(calc);
+//console.log("---------------------------")
+//let calc = StudentCalc.AnnualFeeCalc(100, 200);
+//console.log(calc);
