@@ -8,18 +8,21 @@ let student = {
     Name:"Alvaro",
     Age: 30, 
     Phone: 213546,
-    Language:LanguagesKnown.Hindi
+    Language:LanguagesKnown[LanguagesKnown.Hindi]
 }
 
 let StudentsList = [
-    {Name:"Sara", Age:26, Phone:5465487987, Language: LanguagesKnown.English},
-    {Name:"Samantha", Age:22, Phone:5465487987, Language: LanguagesKnown.Spanish}    
+    {Name:"Sara", Age:26, Phone:5465487987, Language: LanguagesKnown[LanguagesKnown.English]},
+    {Name:"Samantha", Age:22, Phone:5465487987, Language: LanguagesKnown[LanguagesKnown.Spanish]}    
 ]
 
 StudentsList.push(student);
 
-for (let index = 0; index < StudentsList.length; index++) {
-    console.log(StudentsList[index])
+function ShowPersons(persons: any[]) {
+    for (let index = 0; index < persons.length; index++) {
+        console.log(persons[index])
+    }
 }
 
 
+ShowPersons(StudentsList);
