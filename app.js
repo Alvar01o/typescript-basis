@@ -23,5 +23,32 @@ function ShowPersons(persons) {
         console.log(persons[index]);
     }
 }
+function getNumbers() {
+    var nums = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        nums[_i] = arguments[_i];
+    }
+    nums.forEach(function (element) {
+        console.log("Number:" + element);
+    });
+}
 ShowPersons(StudentsList);
+console.log("---------------------------");
+getNumbers(1, 2, 3, 4, 5, 6, 7, 8);
+console.log("---------------------------");
+function GetInfo(info) {
+    if (info === void 0) { info = "Happy"; }
+    console.log(info);
+}
+GetInfo("Alvaro");
+GetInfo();
+console.log("---------------------------");
+var StudentName = function (fName, lName) {
+    return fName + "..." + lName;
+};
+console.log(StudentName("Alvaro", "Mercado"));
+var StudentName2 = function (fName, lName) {
+    return fName + "..." + lName;
+};
+console.log(StudentName2("El", "Pepe"));
 //# sourceMappingURL=app.js.map
